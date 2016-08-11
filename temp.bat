@@ -1,0 +1,3 @@
+set SSH_AUTH_SOCK=/tmp/ssh-BrmDCn1888/agent.1888
+set SSH_AGENT_PID=7936
+
