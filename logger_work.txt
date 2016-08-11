@@ -1,0 +1,41 @@
+card scanner app
+-database: stores data about each student
+	=Student Table
+		-name
+			_string
+		-start date
+			_date
+		-card numbers
+			_ints
+		-classes attended
+			_(name,date)
+
+	=Class Table
+		-name
+			_string
+		-start time
+			_int(0-2399)
+		-day of week
+			-string or int (0-6, M-Su)
+		-recurring
+			-bool
+		-date for 1 offs?
+			_date?
+
+-Front end:
+	=webpage (flask)
+		_admin enters/modifies class data
+		_admin enters/modifies user data
+		_display user data
+		_extract data to csv
+
+-Back end:
+	=active monitor for card reader/usb drive to capture data
+	=means to capture data in db
+		_add class
+			+determine user from card
+			+determine class
+			+add class entry for user
+		_remove class
+			+admin tool, maybe card read, maybe not
+		_display user data?
